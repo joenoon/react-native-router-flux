@@ -60,6 +60,7 @@ export default class extends React.Component {
                 >
                   push new scene hideNavBar=false hideTabBar=false
                 </Button>
+                <Button onPress={() => { Actions.moreTabs(); }}>push new tabs</Button>
                 <Button onPress={Actions.pop}>pop</Button>
             </View>
         );

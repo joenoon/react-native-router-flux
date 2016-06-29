@@ -102,7 +102,7 @@ export default class Example extends React.Component {
                 <Scene key="root" hideNavBar hideTabBar>
                     <Scene key="echo" clone component={EchoView} getTitle={(navState) => navState.key} />
 
-                    <Scene key="moreTabs" tabs tabBarStyle={styles.tabBarStyle} tabBarSelectedItemStyle={styles.tabBarSelectedItemStyle}>
+                    <Scene clone key="moreTabs" tabs tabBarStyle={styles.tabBarStyle} tabBarSelectedItemStyle={styles.tabBarSelectedItemStyle}>
                         <Scene key="mtab1"  title="mTab #1" icon={TabIcon}>
                             <Scene key="mecho1" clone component={EchoView} getTitle={(navState) => navState.key} />
                         </Scene>
