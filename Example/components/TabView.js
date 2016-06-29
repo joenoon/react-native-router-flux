@@ -43,6 +43,7 @@ const TabView = (props, context) => {
       <Button onPress={() => { drawer.close(); Actions.tab4(); }}>Switch to tab4</Button>
       <Button onPress={() => { drawer.close(); Actions.tab5(); }}>Switch to tab5</Button>
       <Button onPress={() => { drawer.close(); Actions.echo(); }}>push new scene</Button>
+      <Button onPress={() => { drawer.close(); Actions.moreTabs(); }}>push new tabs</Button>
     </View>
   );
 };

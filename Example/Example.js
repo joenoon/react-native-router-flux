@@ -101,6 +101,20 @@ export default class Example extends React.Component {
             <Scene key="modal" component={Modal} >
                 <Scene key="root" hideNavBar hideTabBar>
                     <Scene key="echo" clone component={EchoView} getTitle={(navState) => navState.key} />
+
+                    <Scene key="moreTabs" tabs tabBarStyle={styles.tabBarStyle} tabBarSelectedItemStyle={styles.tabBarSelectedItemStyle}>
+                        <Scene key="mtab1"  title="mTab #1" icon={TabIcon}>
+                            <Scene key="mecho1" clone component={EchoView} getTitle={(navState) => navState.key} />
+                        </Scene>
+                        <Scene key="mtab2"  title="mTab #2" icon={TabIcon}>
+                            <Scene key="mecho2" clone component={EchoView} getTitle={(navState) => navState.key} />
+                        </Scene>
+                        <Scene key="mtab3"  title="mTab #3" icon={TabIcon}>
+                            <Scene key="mecho3" clone component={EchoView} getTitle={(navState) => navState.key} />
+                        </Scene>
+                    </Scene>
+
+
                     <Scene key="switcher" component={Switch} selector={(props) => {
                         return 'text1';
                     }}>
